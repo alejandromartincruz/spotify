@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spotify queries</title>
+    <link rel="stylesheet" type="text/css" href="spotify.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+  </head>
+
+  <body>
+    <header id="header" class="title">
+      <center><h1>Spotify search web</h1></center>
+      </header><!-- /header -->
+      <div class="container">
+        <div class="panel panel-default" >
+          <div class="panel-body">
+            <div class="row">              
+              <div class="col-lg-6">
+              <form>
+                <div class="input-group">
+                  <input id="artist-name" type="text" class="form-control" placeholder="Search for an artist...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" id="search-artist-btn">Go!</button>
+                  </span>
+                  </div><!-- /input-group -->
+                  </form>
+                  </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+              </div>
+            </div>
+
+            <div class="container results">
+              <div class="panel panel-default" >
+                <h3 id="first-result-title" style="margin-left: 25px;"></h3> 
+                  <ul id="answer"></ul>
+              </div>
+            </div>
+
+            <div class="container albums">
+              <div class="panel panel-default" >
+                <h3 id="albums-result-title" style="margin-left: 25px;"></h3> 
+                  <ul id="albums-answer"></ul>
+              </div>
+            </div>
+
+            <script src="spotify.js"></script>
+
+          </body>
+        </html>
